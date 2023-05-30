@@ -1,0 +1,169 @@
+/* 2201803 한송이 */
+* {
+    list-style: none; /* 리스트 점 제거 */
+    text-decoration-line: none; /* 링크 밑줄 없애기 */
+    color: inherit; /* 링크 색상 제거*/
+}
+
+body {
+    /* background-image: url(want.png); */
+    background-size: cover;
+}
+
+.container {
+    width: 1221px;
+    height: 539px;
+    margin: 30px 20px; /* 상하 좌우*/
+    display: flex;
+    /* background-color: antiquewhite; */
+}
+
+
+.box01 {
+    width: 200px;
+    height: 541px;
+    /* background-color: rgba(231, 213, 189, 0.6); opacity: 자식까지 투명하게 됨 배경만 투명하게 하고 싶으면 rgba */
+}
+
+.box02 {
+    /* width: 1008px; */
+    width: 1021px;
+    height: 541px;
+    /* background-color: lightcoral; */
+}
+
+
+/* box01 */
+.logo {
+    border-radius: 70%; /* 모서리 굴곡(70% = 원) */
+    /* background-color: rgb(255, 208, 216); */
+}
+
+.logo > a > img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;  /* 컨테이너에 딱 맞게 */
+
+    /* 무한회전 */
+    animation: rotate_image 20s linear infinite;transform-origin: 50% 50%;}
+    @keyframes rotate_image{ 100% {
+        transform: rotate(360deg);
+    }
+}
+
+.categori {
+    width: 160px;
+    /* height: 300px; */
+    height: auto;
+    margin: auto;
+    padding: 0.8em;
+    border-radius: 2%;
+    /* background-color: #E7D5BD; */
+    /* background-color: rgba(231, 213, 189, 0.4); opacity: 자식까지 투명하게 됨 배경만 투명하게 하고 싶으면 rgba */
+}
+
+.categori > li {
+    margin-left: 18px;
+    margin-bottom: 10px;
+    margin-right: 18px;
+    margin: 10px 26px;
+    /* background-color: lightgreen; */
+    /* font-family: 'Rufina', serif; */
+}
+
+
+
+/* box02 */
+.nav {
+    width: auto;
+    height: 121px;
+    margin: 0px;
+    display: flex;  /* flex: 가로 */
+    justify-content: end;
+    /* background-color: powderblue; */
+}
+
+.nav > li > a {
+    margin-right: 55px;
+    margin-top: 18px;
+    /* font-family: 'Rufina', serif; */
+}
+
+
+/* contents */
+.contents {
+    width: 1021px;
+    height: 307px;
+    display: flex;
+    /* background-color: palegreen; */
+}
+
+.profile {
+    width: 306px;
+    height: 306px;
+    margin-right: 40px;
+    margin-left: 82px;
+    margin-top: 0px;    /*위 오른 하 왼*/
+    /* background-color: rgb(244, 166, 198); */
+}
+
+.profile > img{
+    width: 306px;
+    height: 306px;
+    border-radius: 70%; /*모서리 굴곡(70% = 원)*/
+    object-fit: cover;  /* 컨테이너에 딱 맞게 */
+    /* background-color: pink; */
+}
+
+.text_box {
+    width: 631px;
+    height: 306px;
+    /* background-color: plum; */
+}
+
+.text_box01 {
+    width: 564px;
+    height: 126px;
+    margin-top: 30px;
+    /* background-color: rgb(196, 158, 246); */
+}
+
+.text_box01 > p {
+    font-family: 'Tilt Warp', cursive;
+    font-size: 70px;
+    margin: 0px;
+    padding: 50px 16px 0px 15px;
+}
+
+.text_box02 {
+    width: 564px;
+    height: 100px;
+    margin-top: 14px;
+    /* background-color: rgb(196, 158, 246); */
+}
+
+.text_box02 > p {
+    font-family: 'NanumSquareNeoBold';
+    font-size: 20px;
+    margin: 0;
+    padding: 0px 16px;
+    line-height: 1.5;
+    /* background-color: lightpink; */
+}
+
+.icons {
+    /* display: inline; */
+    width: 42px;
+    height: 113px;
+    margin-left: 936px;
+    font-size: 24px;
+    flex-direction: column;
+    /* display: flex; */
+    /* background-color: lightcyan; */
+}
+
+.icons > a > i {
+    padding: 10px 10px;
+    margin-bottom: 15px;
+    /* background-color: lightpink; */
+}

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://hangeul.pstatic.net/hangeul_static/css/NanumGgocNaeEum.css');
+@import url('https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+
+h1 {
+    font-family: 'NanumSquareRound';
+    /* font-size: 40px; */
+    text-align: center; /* 가운데 정렬 */
+    /* background-color: rgb(253, 247, 89); */
+    border-radius: 8px;
+    padding: 4px 14px;
+    color: rgb(41, 40, 40);
+}
+
+
+h2 {
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+
+header > p {
+    font-family: 'NanumSquareRound';
+    text-align: center;
+}
+
+
+p {
+    font-family: 'Gowun Dodum', sans-serif; 
+}
+
+
+body {
+    background-image: url(bg-grid.png);
+    background-size: cover; /* 전체로 보여짐 */
+}
+
+
+.container {
+    width: 1215px;
+    height: auto;
+    margin: 12px;
+    display: flex;
+    float: right;
+}
+
+
+.box01 {
+    width: 350px;
+    height: 300px;
+    border: 7px dashed rgb(250, 179, 191);
+    background-color: rgb(248, 225, 228);
+    padding: 0.8em;
+    margin: 10px 30px 20px 10px; /* margin 상우하좌*/
+}
+
+
+.box02 {
+    width: 350px;
+    height: 300px;
+    border: 7px dashed rgb(255, 231, 126);
+    background-color: rgb(252, 252, 221);
+    padding: 0.8em;
+    margin: 10px 30px 20px 10px; /* margin 상우하좌*/
+}
+
+
+.box03 {
+    width: 350px;
+    height: 300px;
+    border: 7px dashed rgb(123, 207, 125);
+    background-color: rgb(195, 251, 209);
+    padding: 0.8em;
+    margin: 10px 30px 20px 10px; /* margin 상우하좌*/
+}
+
+footer {
+    width: auto;
+    height: auto;
+    background-color: aqua;
+}
+
+
+
+/* 미디어쿼리 */
+/* 작은 화면 min-width 스마트폰 등*/
+@media(max-width: 768px) {
+    p {
+        font-family: 'Gowun Dodum', sans-serif; 
+    }
+    
+    
+    body {
+        background-image: url(bg-grid.png);
+        background-size: cover; /*전체로 보여짐*/
+    }
+    
+    
+    .container {
+        width: 600px;
+        height: auto;
+        margin: 4px;
+        display: inline-block;
+    }
+    
+    
+    .box01 {
+        width: 400px;
+        height: 300px;
+        border: 7px dashed rgb(250, 179, 191);
+        background-color: rgb(248, 225, 228);
+        padding: 0.8em;
+        margin: 40px 80px;
+    }
+    
+    
+    .box02 {
+        width: 400px;
+        height: 300px;
+        border: 7px dashed rgb(255, 231, 126);
+        background-color: rgb(252, 252, 221);
+        padding: 0.8em;
+        margin: 40px 80px;
+    }
+    
+    
+    .box03 {
+        width: 400px;
+        height: 300px;
+        border: 7px dashed rgb(123, 207, 125);
+        background-color: rgb(195, 251, 209);
+        padding: 0.8em;
+        margin: 40px 80px;
+    }
+
+}

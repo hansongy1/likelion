@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>What's In My Bag</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Calistoga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Domine&family=Patua+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Titan+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+</head>
+
+
+<style>
+    h1 {
+        
+        font-family: 'Calistoga', cursive;
+        font-size: 40px;
+        /* margin: auto; */
+        padding: 1%;
+    }
+    
+    h2 {
+        font-family: 'Patua One', cursive;
+    }
+
+    p, li {
+        font-family: 'Gowun Dodum', sans-serif;
+    }
+
+    h3, label {
+        font-family: 'Gelasio', serif;
+        
+    }
+
+    input {
+        font-family: 'Gowun Dodum', sans-serif;
+        margin-bottom: 10px;
+    }
+
+
+    
+    /* 상자 */
+    .container {
+        width: 1230px;
+        height: 400px;
+        /* background-color: grey; */
+        margin-top: 12px;
+        margin-left: 12px;
+        margin-bottom: 12px;
+        margin-right: 12px;
+        display: flex;
+    }
+
+    .box01 {
+        width: 180px;
+        height: auto;
+        /* border: 3px solid rgb(104, 103, 108); */
+        padding: 0.8em;
+    }
+
+    .box02 {
+        width: 440px;
+        height: auto;
+        border: 9px double rgb(178, 232, 195);
+        background-color: rgb(232, 247, 237);
+        padding: 0.8em;
+        float: left;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .box03 {
+        width: 520px;
+        height: auto;
+        /* background-color: rgb(194, 241, 241); */
+        display: flex; 
+        flex-direction: column; /* 세로 정렬 */
+    }
+
+
+    .box03-1 {
+        width: auto;
+        height: 165px;
+        border: 5px dashed pink;
+        background-color: rgb(248, 235, 237);
+        margin-bottom: 15px;
+        padding: 0.8em;
+        padding-top: 0.2em;
+        /* flex: 50%; */
+    }
+
+    
+    .box03-2 {
+        width: auto;
+        height: 165px;
+        /* border: 5px dotted rgb(251, 251, 164); */
+        border: 7px dotted rgb(255, 217, 135);
+        background-color: rgb(251, 251, 225);
+        padding: 0.8em;
+        padding-top: 0.2em;
+        /* flex: 50%; */
+    }
+
+
+    /* 사진 위치 조절 */
+    .box03-1-a {
+        width: 160px;
+        height: 115px;
+        padding-right: 2.0em;
+        /* background-color: aquamarine; */
+        display: flex;
+        flex-direction: row;
+        float: left;
+    }
+
+    .box03-2-a {
+        width: 160px;
+        height: 115px;
+        padding-right: 2.0em;
+        /* background-color: aquamarine; */
+        display: flex;
+        flex-direction: row;
+        float: left;
+    }
+
+
+    /* 사진 크기 조절 */
+    .box02 > section > img {
+        width: 40%;
+        height: 60%;
+    }
+    
+    .box03-1 > .box03-1-a > section > img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .box03-2 > .box03-2-a > section > img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* 텍스트 간격 */
+    .box03-1 > ul > li{
+        margin-top: 10px;
+    }
+
+    .box03-2 > ul > li{
+        margin-top: 10px;
+    }
+
+
+    /* footer */
+    .footer {
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        height: 50px;
+        width: 100%;
+
+    }
+
+    .footer > p {
+        text-align: center;
+        font-size: 15px;
+    }
+
+</style>
+<body>
+    <header>
+        <h1><center>What's In My Bags</center></h1>
+    </header>
+    <hr>
+
+    <div class="container">
+        <div class="box01">
+            <nav>
+                <h3>LOGIN</h3>
+            </nav>
+            <form action="login" method="post">
+                <div>
+                    <label for="id">ID: </label>
+                    <input id="id" name="userid" type="text" placeholder="아이디">
+                </div>
+                <div>
+                    <label for="pwd">Password: </label>
+                    <input id="pwd" name="userPwd" type="password" placeholder="비밀번호">
+                </div>
+                <input type="submit" value="로그인">
+            </form>
+        </div>
+
+        <div class="box02">
+            <nav>
+                <h2>★ Backpack</h2>
+            </nav>
+            <section>
+                <img src="img2/bagpack.png" alt="">
+            </section>
+            <ul>
+                <li>네이키드니스 백팩
+                    <a href="https://www.neikidnis.com/product/detail.html?product_no=319&cate_no=158&display_group=1">(바로가기)</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="box03">
+            <div class="box03-1">
+                <nav>
+                    <h2>★ Monthly Planner & Pen</h2>
+                </nav>
+                <div class="box03-1-a">
+                    <section>
+                        <img src="img2/monthly_pen.png" alt="">
+                    </section>
+                </div>
+                <ul>
+                    <li>아르디움 먼슬리 플래너
+                        <a href="https://ardium.co.kr/product/detail.html?product_no=3000&cate_no=1&display_group=3">(바로가기)</a>
+                    </li>
+                    <li>산리오 제트스트림 3색 볼펜
+                        <a href="https://kininaru.co.kr/product/%ED%8E%9C-%EC%82%B0%EB%A6%AC%EC%98%A4-%EC%A0%9C%ED%8A%B8%EC%8A%A4%ED%8A%B8%EB%A6%BC-
+                        3%EC%83%89-%EB%B3%BC%ED%8E%9C-3%ED%83%84-%EB%A7%88%EC%9D%B4%EB%A9%9C%EB%A1%9C%EB%94%94/8626/">(바로가기)</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box03-2">
+                <nav>
+                    <h2>★ Airpods & Battery</h2>
+                </nav>
+                <div class="box03-2-a">
+                    <section>
+                        <img src="img2/digital.png" alt=""></a>
+                    </section>
+                </div>
+                <ul>
+                    <li>에어팟
+                        <a href="https://www.apple.com/kr/shop/product/MQD83KH/A/airpods-pro">(바로가기)</a>
+                    </li>
+                    <li>보조배터리
+                        <a href="https://bloomingtale.co.kr/product/18%EC%B0%A8-%EC%98%88%EC%95%BD-eight-ball-signature-battery/150/
+                        category/61/display/1/">(바로가기)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+    <footer class="footer">
+        <p>한송이(allrohsy@gmail.com)</p>
+    </footer>
+</body>
+</html>

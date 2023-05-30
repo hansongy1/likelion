@@ -1,0 +1,117 @@
+* {
+    list-style: none; /* 리스트 점 제거 */
+}
+
+body {
+    /* background-image: url(webpage/want.png); */
+    background-size: cover;
+}
+
+.container {
+    width: 1221px;
+    height: 539px;
+    margin: 30px 20px; /* 상하 좌우*/
+    display: flex;
+    /* background-color: antiquewhite; */
+}
+
+.box01 {
+    width: 200px;
+    height: 541px;
+    /* background-color: palegoldenrod; */
+}
+
+.box02 {
+    width: 1008px;
+    height: 541px;
+    /* background-color: palegreen; */
+}
+
+
+/* box01 */
+.logo > a > img{
+    /* width: 213px;
+    height: 213px; */
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* 컨테이너에 딱 맞게 */
+    border-radius: 70%;
+
+    /* 무한회전 */
+    animation: rotate_image 20s linear infinite;transform-origin: 50% 50%;}
+    @keyframes rotate_image{ 100% {
+        transform: rotate(360deg);
+    }
+}
+
+.categori {
+    width: 160px;
+    height: 300px;
+    margin: auto;
+    /* margin: 60px 0px 0px; */
+    padding: 0.8em;
+    background-color: paleturquoise;
+}
+
+
+/* box02 */
+.nav {
+    width: auto;
+    height: 121px;
+    margin: 0px;
+    display: flex; /* flex: 가로 */
+    justify-content: end;
+    /* background-color: powderblue; */
+}
+
+.nav > li {
+    margin-right: 55px;
+    /* margin-left: 50px; */
+    margin-top: 18px;
+}
+
+.contents {
+    width: 1008px;
+    height: 426px;
+    display: flex;
+    /* background-color: palegreen; */
+}
+
+.profile {
+    width: 306px;
+    height: 306px;
+    margin-right: 39px;
+    margin-left: 70px;
+    margin-top: 0px; /*위 오른 하 왼*/
+    /* background-color: mediumaquamarine; */
+}
+
+.profile > img{
+    width: 306px;
+    height: 306px;
+    border-radius: 70%; /*모서리 굴곡(70% = 원)*/
+    object-fit: cover; /* 컨테이너에 딱 맞게 */
+    /* background-color: pink; */
+}
+
+.text_box {
+    width: 631px;
+    height: 321px;
+    margin-top: 0px;
+    /* flex-direction: row; div 박스 가로 정렬 */
+    /* background-color: plum; */
+}
+
+.text_box01 {
+    width: 387px;
+    height: 121px;
+    margin-top: 33px;
+    margin-bottom: 15px;
+    /* background-color: rgb(196, 158, 246); */
+}
+
+.text_box02 {
+    width: 564px;
+    height: 103px;
+    /* background-color: rgb(196, 158, 246); */
+}

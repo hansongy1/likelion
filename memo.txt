@@ -1,0 +1,74 @@
+선택자: h1
+
+*은 전체 선택되는 거
+
+아이디는 샵
+클래스는 쩜
+
+hover 마우스를 올릴 때
+
+과제-중요한 거에 밑줄 치는 것처럼
+
+%same{
+
+}
+
+어떻게 서치하고 해결했는지 잘 적어놓기(회사에서 물어봄)
+유튜브 드림코딩
+
+데이터 수집
+결정집
+시각화하는 방법
+슬라이드의 준에서 해야할 일
+두 가지 타입
+- 숫자
+- 문자
+
+
+//
+
+선택자(id, class)
+부모자식
+
+선택자(selector)
+css 효과 적용을 "어떤" 태그에 할 것인지 정해주는 것이다.
+
+1. id: 
+- css를 주고 싶은 특정한 태그가 1개 있을 때 사용 
+- html 안에서 유일한 값(ex. 주민등록번호)
+- css에서 #을 씀
+
+2. class: 
+- 비슷한 특성을 주고 싶은 태그들이 여러 개일 때 사용
+- css 안에서 .을 씀
+
+3. 부모 자식 선택자:
+- 부모 태그를 이용해서 자식 태그에게 css 효과를 줌
+
+4. 가상클래스:
+- 행동의 변화를 css로 보여줌
+:active: 누르고 있는 순간
+:hover: 누르지 않고 커서를 올리고 있을 때
+:visited: 마우스를 누른 후
+:link: 마우스 누르기 전
+:focus: 작성을 위해 클릭한 상태 (ex. 커서가 깜빡임)
+
+
+속성 
+1. background
+- background-color: 바탕색
+- background-image: 바탕에 이미지 삽입
+- background-repeat: 바탕에 삽입한 이미지의 반복 여부
+
+2. 타이포그래피
+- color: 단어의 색
+- text-align: 입력한 글자의 배치
+ex. text-align: center(/left/right/justify);
+
+3. font 폰트
+- font-family: 글씨체
+- font-weight: 글씨 두께
+- font-size: 폰트 사이즈
+- font-size: 00px; (절대적)
+- font-size: 00em; (상대적)
+- font-size: 00rem; (상대적)

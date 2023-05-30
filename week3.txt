@@ -1,0 +1,24 @@
+자바스크립프: 동적
+
+variable: 대입하는 거임(지대 중요)
+var: 거의 사라지는 추세
+
+
+NaN: 숫자가 아니다
+
+212: 더하기 1이 정상적으로 작동 됐다
+
+5. Type Conversion: 스트링에서 넘버로 바뀔 때
+
+6. String.prototype
+.trim: 공백 제거
+replaceAll(): 전체를 대체하다
+
+(0, " " )공백 전까지
+
+
+var result3 = str.slice(2); --> 2부터 끝까지(컴마 없으면 끝까지)
+
+page 41
+함께 사용할 수 있음
+.charAt(0).toUpperCase()

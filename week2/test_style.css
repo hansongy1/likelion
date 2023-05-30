@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+/* h1 {
+    font-family: 'Fredoka One', cursive;
+}
+
+h3 {
+
+} */
+
+* {
+    font-family: 'Fredoka One', cursive;
+}
+
+div h2 {
+    color: pink;
+}
+
+.container {
+    background-color: beige;
+}
+
+#red {
+    background-color: red;
+}
+
+#yellow {
+    background-color: rgb(255, 228, 91);
+}
+
+body {
+    background-image: url(hamtori.png);
+    background-size: cover; /* 전체로 보여짐 */
+}

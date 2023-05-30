@@ -1,0 +1,5 @@
+and는 both
+break; --> 제동을 걸어서 if문 처럼 밑에 있는 건 안 보이게
+
+if문은 break 쓰지 않지만
+switch문은 break 필수
